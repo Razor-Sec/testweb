@@ -1,0 +1,289 @@
+[
+  
+  {
+    "title": "Tryhackme sustah",
+    "url": "/posts/writeup-tryhackme-sustah/",
+    "categories": "Writeup, Tryhackme, Linux",
+    "tags": "medium-box, boot2root, privilage escalation, web exploitation, cve",
+    "date": "2021-03-05 00:00:00 +0700",
+    
+
+
+
+
+
+    "snippet": "IntroductionThis is partical room from tryhackme entitled “sustah” from Tryhackme . Difficulty of This box is Medium and in this box you will learn all about exploiting CMS , Missconfiguration, Bruteforcing, Privilage escalation. Okay no let’s Pwn this box :p.Room Link hereScanningNmapFirst we mu..."
+  },
+  
+  {
+    "title": "Loly Writeup",
+    "url": "/posts/writeup-vulnhub-loly/",
+    "categories": "Writeup, Vulnhub, Linux",
+    "tags": "easy-box, boot2root, privilage escalation, web exploitation, cve",
+    "date": "2021-03-02 00:00:00 +0700",
+    
+
+
+
+
+
+    "snippet": "IntroductionThis is partical room from tryhackme entitled “Loly” form vulnhub. Difficulty of This box is easy and in this box you will learn all about exploiting Wordpress , Bruteforce login, Custom exploitation For privilage escalation. Okay no let’s Pwn this box :p.ScanningFirst think we gonna ..."
+  },
+  
+  {
+    "title": "Tryhackme LunizzCTF (CVE SUDOERS)",
+    "url": "/posts/writeup-tryhackme-CVE-SUDOERS/",
+    "categories": "Writeup, Tryhackme, Linux",
+    "tags": "medium-box, lfi, boot2root, privilage escalation, web exploitation, cve",
+    "date": "2021-03-01 00:00:00 +0700",
+    
+
+
+
+
+
+    "snippet": "IntroductionThis is partical room from tryhackme entitled LunizzCTF with Medium difficulty, but In this Case i want to implement cve sudoers (CVE-2021-3156). In this room we will learn about boot2root, Web Exploitation and Privilage escalation with CVE. room link here  I just tried poc from sudo ..."
+  },
+  
+  {
+    "title": "Pwned1 Writeup",
+    "url": "/posts/writeup-vulnhub-pwned1/",
+    "categories": "Writeup, Vulnhub, Linux",
+    "tags": "boot2root, medium-box, custom exploitation, privilage escalation, cve",
+    "date": "2021-02-28 00:00:00 +0700",
+    
+
+
+
+
+
+    "snippet": "IntroductionThis is partical room from tryhackme entitled “Pwned1” form vulnhub. Difficulty of This box is Intermediate and in this box you will learn all about Fuzzing diretory, Custom exploitation, and getting privilage of root. Okay no let’s Pwn this box :p.ScanningAs usual we will scan the ip..."
+  },
+  
+  {
+    "title": "Tryhackme Magician",
+    "url": "/posts/writeup-tryhackme-magician/",
+    "categories": "Writeup, Tryhackme, Linux",
+    "tags": "boot2root, easy-box, web exploitation, enumeration, cve",
+    "date": "2021-02-23 00:00:00 +0700",
+    
+
+
+
+
+
+    "snippet": "IntroductionThis is partical room from tryhackme entitled “Magician” with Easy difficulty. In this room we will learn about Exploitation RCE with multiple vulnerabilities in ImageMagick from CVE-2016–3714 and Tunneling port. We will doing to getting shell from web then tunneling listening port to..."
+  },
+  
+  {
+    "title": "Tryhackme Watcher",
+    "url": "/posts/writeup-tryhackme-watcher/",
+    "categories": "Writeup, Tryhackme, Linux",
+    "tags": "boot2root, lfi, medium-box, privilage escalation, web exploitation, enumeration",
+    "date": "2021-02-20 00:00:00 +0700",
+    
+
+
+
+
+
+    "snippet": "IntroductionThis is partical room from tryhackme entitled “Watcher” with Medium difficulty. In this room we will learn about File Inclusion, LFI to RCE, Getting privilage from cronjob, and Python library injection. In this room we will doing lfi and getting any credential then exploit the box. Li..."
+  },
+  
+  {
+    "title": "Tryhackme The Great Escape",
+    "url": "/posts/writeup-tryhackme-The-Great-Escape/",
+    "categories": "Writeup, Tryhackme, Linux",
+    "tags": "boot2root, medium-box, privilage escalation, web exploitation, enumeration, docker, SSRF",
+    "date": "2021-02-19 00:00:00 +0700",
+    
+
+
+
+
+
+    "snippet": "IntroductionThis is partical room from tryhackme entitled “The Great Escape” with Medium difficulty. In this room we will learn about SSRF along with code injection, Port Knocking, Enumeration of docker and get escape from docker . Here we will exploit using SSRF then port knocking so that the do..."
+  },
+  
+  {
+    "title": "Tryhackme Inferno",
+    "url": "/posts/writeup-tryhackme-inferno/",
+    "categories": "Writeup, Tryhackme, Linux",
+    "tags": "boot2root, medium-box, privilage escalation, cve, web exploitation, enumeration",
+    "date": "2021-02-16 00:00:00 +0700",
+    
+
+
+
+
+
+    "snippet": "IntroductionThis is partical room from Tryhackme entitled Inferno with Medium difficulty. In this room we will learn about exploit HTTP basic auth and IDE Exploit and Linux Privilage escalation . In this case we will find the vulnerability in Codiad (CVE-2017-15689) without further ado, let’s jus..."
+  },
+  
+  {
+    "title": "Hackthebox Jewel",
+    "url": "/posts/writeup-hackthebox-jewel/",
+    "categories": "Writeup, Hackthebox, Linux",
+    "tags": "boot2root, custom exploitation, medium-box, privilage escalation, cve, web exploitation, enumeration",
+    "date": "2021-02-15 00:00:00 +0700",
+    
+
+
+
+
+
+    "snippet": "IntroductionThis is partical room from hackthebox entitled jewel with Medium difficulty. In this room we will learn about code analysis of a Ruby on Rails web application . This reveals an unsafe use of RedisCacheStore (CVE-2020-8165), which is leveraged to get RCE. After archiving a foothold, we..."
+  },
+  
+  {
+    "title": "Tryhackme En-pass",
+    "url": "/posts/writeup-tryhackme-en-pass/",
+    "categories": "Writeup, Tryhackme, Linux",
+    "tags": "boot2root, custom exploitation, medium-box, privilage escalation, cve, web exploitation, enumeration",
+    "date": "2021-02-14 00:00:00 +0700",
+    
+
+
+
+
+
+    "snippet": "IntroductionThis is partical room from tryhackme entitled En-pass with Medium difficulty. In this room we will learn about web exploitation and privilage escalation . room link hereEnumerationNmapwhat we have to do first is scanning the ip :$ nmap -sC -sV -oA nm 10.10.144.190Nmap scan report for ..."
+  },
+  
+  {
+    "title": "Tryhackme Archangel",
+    "url": "/posts/writeup-tryhackme-archanel/",
+    "categories": "Writeup, Tryhackme, Linux",
+    "tags": "medium-box, lfi, boot2root, privilage escalation, web exploitation, reversing binary",
+    "date": "2021-02-12 00:00:00 +0700",
+    
+
+
+
+
+
+    "snippet": "IntroductionThis is partical room from tryhackme entitled archangel with easy difficulty, but for me its medium difficulty. In this room we will learn about boot2root, Web Exploitation. room link hereEnumerationnmapFirst we must scanning the box with nmap for enumeration.$ sudo nmap -sC -sV 10.10..."
+  },
+  
+  {
+    "title": "Hackthebox Tenet",
+    "url": "/posts/writeup-hackthebox-tenet/",
+    "categories": "Writeup, Hackthebox, Linux",
+    "tags": "enumeration, boot2root, medium-box, rce php, web exploitation, privilage escalation, cve",
+    "date": "2021-02-11 00:00:00 +0700",
+    
+
+
+
+
+
+    "snippet": "IntroductionThe tenet machine of Hackthebox is an active machine. here we will learn a lot about RCE in php and other privileges. I suggest you read all of these writeups to understand what’s going on here. you can join this room in hereEnumerationNmapfirst we must scanning the machine :$ sudo nm..."
+  },
+  
+  {
+    "title": "Tryhackme Madeye&#39;s Castle",
+    "url": "/posts/writeup-tryhackme-madeye-castle/",
+    "categories": "Writeup, Tryhackme, Linux",
+    "tags": "cracking, reversing binary, enumeration, custom exploitation, sql injection, medium-box, boot2root, privilage escalation",
+    "date": "2021-02-10 00:00:00 +0700",
+    
+
+
+
+
+
+    "snippet": "Introductionin this room we will do a lot of enumeration , gain a foothold, pivot around to a few different users, etc . You can see the room right here https://tryhackme.com/room/madeyescastleEnumerationNmapwhat we have to do first is scanning the ip :  $ sudo nmap -sC -sV 10.10.185.66# Nmap 7.9..."
+  },
+  
+  {
+    "title": "Tryhackme Classic Passwd",
+    "url": "/posts/writeup-tryhackme-classic-passwd/",
+    "categories": "Writeup, Tryhackme",
+    "tags": "cracking, reversing binary",
+    "date": "2021-02-09 00:00:00 +0700",
+    
+
+
+
+
+
+    "snippet": "Introductionin this room you will train your skills in reverse engineer and bypass login. you can see room right here : https://tryhackme.com/room/classicpasswdradare2We can use radare2 to open binary and if you dont have it you can download right here : https://github.com/radareorg/radare2Then o..."
+  },
+  
+  {
+    "title": "Hackthebox Delivery",
+    "url": "/posts/writeup-hackthebox-delivery/",
+    "categories": "Writeup, Hackthebox, Linux",
+    "tags": "easy-box, enumeration, custom exploitation, privilage escalation, boot2root",
+    "date": "2021-02-09 00:00:00 +0700",
+    
+
+
+
+
+
+    "snippet": "NmapAs always we will start with nmap to scan for open ports and services:As we can see, we have 2 port open like ssh and webserver. Look at port 80 on browserThen you must see the source code. in the source code we found “delivery.htb” and “helpdesk.delivery.htb”, so we can add domain to your ho..."
+  },
+  
+  {
+    "title": "Root-me Webserver",
+    "url": "/posts/writeup-root-me-webserver/",
+    "categories": "Writeup, root-me",
+    "tags": "web-server",
+    "date": "2021-02-08 00:00:00 +0700",
+    
+
+
+
+
+
+    "snippet": "HTML - Source codeLook at source code&amp;lt;!--  Je crois que c&#39;est vraiment trop simple là ! password : xxx--&amp;gt;HTTP - Open redirectby using `hash-identifier` tool, I found that the hash algorithm is MD5:Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license..."
+  },
+  
+  {
+    "title": "Root-me Client",
+    "url": "/posts/writeup-root-me-webclient/",
+    "categories": "Writeup, root-me",
+    "tags": "web-client",
+    "date": "2021-02-08 00:00:00 +0700",
+    
+
+
+
+
+
+    "snippet": "HTML - disabled buttonsAll you have to do is open a browser inspectior of your choosing and examine the code. (If you are using chrome, you can get to this by pressing Ctrl + Shift + I, or by right clicking and choosing ’Inspect’.)The focus of this challenge is on the input fields underneath the ..."
+  },
+  
+  {
+    "title": "Root-me Cryptography",
+    "url": "/posts/writeup-root-me-Cryptography/",
+    "categories": "Writeup, root-me",
+    "tags": "Cryptography",
+    "date": "2021-02-08 00:00:00 +0700",
+    
+
+
+
+
+
+    "snippet": "Encoding - ASCIIIn GNU/linux, you can use the xxd command :$ echo &quot;4C6520666C6167206465206365206368616C6C656E6765206573743A203261633337363438316165353436636436383964356239313237356433323465&quot; | xxd -r -psEncoding - UUBelow is python3 codeimport uuuu.decode(&#39;ch1.txt&#39;,&#39;output&#..."
+  },
+  
+  {
+    "title": "PowerShell Command",
+    "url": "/posts/Powershell/",
+    "categories": "Command, Windows",
+    "tags": "Powershell",
+    "date": "2021-02-08 00:00:00 +0700",
+    
+
+
+
+
+
+    "snippet": "There is some command powershell which I use every time I pentesting  You may copy this content if you needDefault PowerShell locationsC:\\\\windows\\\\syswow64\\\\windowspowershell\\\\v1.0\\\\powershellC:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershellBasic PS commands to startGet-Help \\* #List ev..."
+  }
+  
+]
+

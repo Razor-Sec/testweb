@@ -1,0 +1,256 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>/</id>
+  <title>Razor-Sec</title>
+  <subtitle>Some writeup all about cyber security Made by Razor-Sec and i'm : CTF Player , Linux Operation , Ethical Hacking| </subtitle>
+  <updated>2021-03-05T19:42:00+07:00</updated>
+  <author>
+    <name>Razor-Sec</name>
+    <uri>/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en-US"
+    href="/"/>
+  <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
+  <rights> © 2021 Razor-Sec </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Tryhackme sustah</title>
+    <link href="/posts/writeup-tryhackme-sustah/" rel="alternate" type="text/html" title="Tryhackme sustah" />
+    <published>2021-03-05T00:00:00+07:00</published>
+  
+    <updated>2021-03-05T00:00:00+07:00</updated>
+  
+    <id>/posts/writeup-tryhackme-sustah/</id>
+    <content src="/posts/writeup-tryhackme-sustah/" />
+    <author>
+      <name>Razor-Sec</name>
+    </author>
+
+  
+    
+    <category term="Writeup" />
+    
+    <category term="Tryhackme" />
+    
+    <category term="Linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introduction
+
+This is partical room from tryhackme entitled “sustah” from Tryhackme . Difficulty of This box is Medium and in this box you will learn all about exploiting CMS , Missconfiguration, Bruteforcing, Privilage escalation. Okay no let’s Pwn this box :p.
+
+Room Link here
+
+Scanning
+
+Nmap
+
+First we must scanning the ip using nmap : nmap 10.10.195.141 -sC -sV
+Nmap scan report for 10.10.195....
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Loly Writeup</title>
+    <link href="/posts/writeup-vulnhub-loly/" rel="alternate" type="text/html" title="Loly Writeup" />
+    <published>2021-03-02T00:00:00+07:00</published>
+  
+    <updated>2021-03-02T00:00:00+07:00</updated>
+  
+    <id>/posts/writeup-vulnhub-loly/</id>
+    <content src="/posts/writeup-vulnhub-loly/" />
+    <author>
+      <name>Razor-Sec</name>
+    </author>
+
+  
+    
+    <category term="Writeup" />
+    
+    <category term="Vulnhub" />
+    
+    <category term="Linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introduction
+
+This is partical room from tryhackme entitled “Loly” form vulnhub. Difficulty of This box is easy and in this box you will learn all about exploiting Wordpress , Bruteforce login, Custom exploitation For privilage escalation. Okay no let’s Pwn this box :p.
+
+Scanning
+
+First think we gonna do now is scanning the machines using nmap :
+$ nmap 192.168.144.121 -sC -sV                   ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Tryhackme LunizzCTF (CVE SUDOERS)</title>
+    <link href="/posts/writeup-tryhackme-CVE-SUDOERS/" rel="alternate" type="text/html" title="Tryhackme LunizzCTF (CVE SUDOERS)" />
+    <published>2021-03-01T00:00:00+07:00</published>
+  
+    <updated>2021-03-01T00:00:00+07:00</updated>
+  
+    <id>/posts/writeup-tryhackme-CVE-SUDOERS/</id>
+    <content src="/posts/writeup-tryhackme-CVE-SUDOERS/" />
+    <author>
+      <name>Razor-Sec</name>
+    </author>
+
+  
+    
+    <category term="Writeup" />
+    
+    <category term="Tryhackme" />
+    
+    <category term="Linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introduction
+This is partical room from tryhackme entitled LunizzCTF with Medium difficulty, but In this Case i want to implement cve sudoers (CVE-2021-3156). In this room we will learn about boot2root, Web Exploitation and Privilage escalation with CVE. room link here
+
+
+  I just tried poc from sudo and I do not recommend you to use this method :D
+
+
+Scanning
+
+Nmap
+
+First let’s scanning this box...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Pwned1 Writeup</title>
+    <link href="/posts/writeup-vulnhub-pwned1/" rel="alternate" type="text/html" title="Pwned1 Writeup" />
+    <published>2021-02-28T00:00:00+07:00</published>
+  
+    <updated>2021-02-28T00:00:00+07:00</updated>
+  
+    <id>/posts/writeup-vulnhub-pwned1/</id>
+    <content src="/posts/writeup-vulnhub-pwned1/" />
+    <author>
+      <name>Razor-Sec</name>
+    </author>
+
+  
+    
+    <category term="Writeup" />
+    
+    <category term="Vulnhub" />
+    
+    <category term="Linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introduction
+This is partical room from tryhackme entitled “Pwned1” form vulnhub. Difficulty of This box is Intermediate and in this box you will learn all about Fuzzing diretory, Custom exploitation, and getting privilage of root. Okay no let’s Pwn this box :p.
+
+Scanning
+
+As usual we will scan the ip of the box.
+$ nmap -sV -sC 192.168.80.95  
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-02-...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Tryhackme Magician</title>
+    <link href="/posts/writeup-tryhackme-magician/" rel="alternate" type="text/html" title="Tryhackme Magician" />
+    <published>2021-02-23T00:00:00+07:00</published>
+  
+    <updated>2021-02-23T00:00:00+07:00</updated>
+  
+    <id>/posts/writeup-tryhackme-magician/</id>
+    <content src="/posts/writeup-tryhackme-magician/" />
+    <author>
+      <name>Razor-Sec</name>
+    </author>
+
+  
+    
+    <category term="Writeup" />
+    
+    <category term="Tryhackme" />
+    
+    <category term="Linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introduction
+This is partical room from tryhackme entitled “Magician” with Easy difficulty. In this room we will learn about Exploitation RCE with multiple vulnerabilities in ImageMagick from CVE-2016–3714 and Tunneling port. We will doing to getting shell from web then tunneling listening port to getting another web which contain root flag. Link room here
+
+Scanning
+
+Nmap
+
+$ nmap -sC -sV -oA nm...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+

